@@ -1,0 +1,15 @@
+{% extends 'first_app/base.html' %}
+
+{% block body_block %}
+
+<h4>Student form</h4>
+
+<form action="" method="POST">
+
+    {{student_form.as_p}}
+    {% csrf_token %}
+
+    <input name="submit" type="submit" value="Add Student">
+</form>
+
+{% endblock  %}
